@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+/*
+body{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}*/
+
+.container {
+  margin: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  align-items: center;
+  height: 200px;
+  text-align: center;
+  color: black;
+}
+
+p{
+  font-size: 1.6em;
+  line-height: 1.1;
+  align-items: center;
+  height: 200px;
+  text-align: center;
+  text-wrap: wrap;
+  color: black;
+}
+
+div{
+  height: 100vh;
+  display: center;
+  align-items: center;
+  height: 200px;
+  text-align: center;
+}
+
+img{
+  margin: auto;
+  display: block;
+}
+
+.nav{
+  background-color: black;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 0rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.site-title{
+  font-size: 4rem;
+  text-decoration: none;
+  font-family: 'Snell Roundhand', cursive;
+}
+
+.nav ul{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer{
+  background-color: black;
+  border-top: 2px solid grey;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1.8rem;
+    
+    
+}
+
+f1{
+  font-size: .8em;
+  line-height: 1.1;
+  align-items: center;
+  height: 200px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 0;
+}
+
+f2{
+  font-size: .8em;
+  line-height: 1.1;
+  align-items: center;
+  height: 200px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  right: 0;
+} 
