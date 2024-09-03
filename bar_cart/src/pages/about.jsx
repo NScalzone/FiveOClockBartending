@@ -9,22 +9,11 @@ const About = () => {
             <p>
                 Five O'Clock Mobile Bartending is a mobile bartending service based in Portland, Oregon. 
                 More stuff about that. It's a great service. We'll get you drunk!
+                <img src="./joanna_at_bar.jpeg" alt="Joanna_at_bar" />
             </p>
+            
 
-            <p>
-                Five O'Clock Mobile Bartending is a mobile bartending service based in Portland, Oregon. 
-                More stuff about that. It's a great service. We'll get you drunk!
-            </p>
-
-            <p>
-                Five O'Clock Mobile Bartending is a mobile bartending service based in Portland, Oregon. 
-                More stuff about that. It's a great service. We'll get you drunk!
-            </p>
-
-            <p>
-                Five O'Clock Mobile Bartending is a mobile bartending service based in Portland, Oregon. 
-                More stuff about that. It's a great service. We'll get you drunk!
-            </p>
+            
       
         </div>
         </body>
