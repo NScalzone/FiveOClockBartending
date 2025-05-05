@@ -10,7 +10,7 @@ const Services = () => {
                     <li>Mobile Bartending with 1-2 licenced bartenders (depending on guest headcount)</li>
                     <li>Water, Soft Drinks, and Ice</li>
                     <li>Bar Tools and Equipment</li>
-                    <li>Basic Plastic Drinkware (premium options availble for additional charge)</li>
+                    <li>Basic Plastic Drinkware (premium options available for additional charge)</li>
                     <li>Setup and Cleanup</li>
                     <li>Liquor Liability Insurance</li>
                     <li>Planning Meetings via Zoom</li>
