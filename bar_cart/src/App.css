@@ -1,6 +1,4 @@
-* 
-
-{
+* {
   box-sizing: border-box;
 }
 
@@ -31,7 +29,7 @@
 }
 
 .body {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     text-align: left;
     line-height: 1.625;
     flex: 1;
@@ -48,6 +46,7 @@
 .social-links {
     margin-top: 1rem;
 }
+
 .instagram-link {
     color: #E4405F;
     transition: color 0.3s ease;
@@ -60,16 +59,17 @@
     color: #C13584;
 }
 
-div{
+div {
   height: 100vh;
   width: 100vw;
 }
 
-ul{
+ul {
   list-style-type: square;
+  padding-left: 1.5rem;
 }
 
-.nav{
+.nav {
   background-color: black;
   color: white;
   display: flex;
@@ -82,9 +82,10 @@ ul{
   top: 0;
   left: 0;
   right: 0;
+  z-index: 100;
 }
 
-.site-title{
+.site-title {
   font-size: 4rem;
   text-decoration: none;
   font-family: 'Snell Roundhand', cursive;
@@ -92,7 +93,7 @@ ul{
   margin-left: 5%;
 }
 
-.nav ul{
+.nav ul {
   padding: 0;
   margin: 0;
   margin-right: 5%;
@@ -119,7 +120,7 @@ a {
   text-decoration: none;
 }
 
-footer{
+footer {
   background-color: black;
   border-top: 2px solid grey;
   color: white;
@@ -129,11 +130,9 @@ footer{
   right: 0;
   width: 100%;
   height: 2.8rem;
-    
-    
 }
 
-f1{
+f1 {
   font-size: .8em;
   line-height: 1.1;
   align-items: center;
@@ -146,7 +145,7 @@ f1{
   padding-top: .5rem;
 }
 
-f2{
+f2 {
   font-size: .8em;
   line-height: 1.1;
   align-items: center;
@@ -157,4 +156,103 @@ f2{
   right: 0;
   padding-right: 2rem;
   padding-top: .5rem;
-} 
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    /* Stack content vertically */
+    .content-container {
+        flex-direction: column;
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+    
+    /* Make image full width on mobile */
+    .about-image {
+        width: 100%;
+    }
+    
+    /* Smaller header text */
+    .header {
+        font-size: 1.75rem;
+        padding: 1rem;
+    }
+    
+    /* Adjust body text */
+    .body {
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /* Smaller site title */
+    .site-title {
+        font-size: 2rem;
+        margin-left: 1rem;
+        padding-top: 1rem;
+    }
+    
+    /* Stack navigation or make it scrollable */
+    .nav {
+        flex-direction: column;
+        padding: 0.5rem 0;
+        gap: 0.5rem;
+    }
+    
+    .nav ul {
+        margin-right: 0;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    /* Footer adjustments */
+    footer {
+        height: auto;
+        padding: 1rem 0;
+        position: relative;
+    }
+    
+    f1, f2 {
+        position: relative;
+        display: block;
+        padding: 0.5rem 1rem;
+        font-size: 0.7em;
+        height: auto;
+        text-align: center;
+        left: auto;
+        right: auto;
+    }
+    
+    /* Make lists more readable */
+    ul {
+        padding-left: 1.5rem;
+        margin-left: 0;
+    }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+    .site-title {
+        font-size: 1.5rem;
+    }
+    
+    .header {
+        font-size: 1.5rem;
+        padding: 0.75rem;
+    }
+    
+    .body {
+        font-size: 0.9rem;
+    }
+    
+    .nav ul {
+        font-size: 0.9rem;
+        gap: 0.5rem;
+    }
+    
+    f1, f2 {
+        font-size: 0.65em;
+        padding: 0.25rem 0.5rem;
+    }
+}
