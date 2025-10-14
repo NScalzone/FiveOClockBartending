@@ -26,7 +26,7 @@ const About = () => {
                 </p>
                 
                 <img 
-                    src="./joanna_at_bar.jpeg" 
+                    src="/joanna_at_bar.jpeg" 
                     alt="Joanna at bar" 
                     className="about-image"
                 />
