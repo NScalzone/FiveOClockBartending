@@ -24,14 +24,14 @@ a:hover {
 }
 
 body {
-  padding-top: 10rem;
+  padding-top: 0;
   margin: 0px;
   display: flex;
   flex-direction: column;
   place-items: center;
   min-width: 100%;
-  min-height: 100%;
-  padding-bottom: 4rem;
+  min-height: 100vh;
+  padding-bottom: 4rem; /* Space for fixed footer */
   
   background-color: white; 
   background-size: auto;
@@ -75,7 +75,7 @@ button:focus-visible {
 @media (max-width: 768px) {
   body {
     padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-bottom: 6rem;
   }
   
   button {
@@ -87,7 +87,7 @@ button:focus-visible {
 @media (max-width: 480px) {
   body {
     padding-top: 6rem;
-    padding-bottom: 10rem;
+    padding-bottom: 8rem;
   }
   
   button {

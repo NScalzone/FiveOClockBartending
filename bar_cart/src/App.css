@@ -14,8 +14,8 @@
     font-weight: bold;
     padding: 2rem;
     padding-bottom: 1.5rem;
+    padding-top: 8rem; /* Add space for fixed nav */
     text-align: left;
-    /* position: sticky; */
     top: 0;
     background-color: white;
     z-index: 10;
@@ -115,6 +115,20 @@ ul {
     color: #9e00a3;
 }
 
+.home-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    padding-top: 8rem;
+}
+
+.home-logo {
+    max-width: 80%;
+    height: auto;
+    object-fit: contain;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -130,6 +144,7 @@ footer {
   right: 0;
   width: 100%;
   height: 2.8rem;
+  z-index: 100;
 }
 
 f1 {
@@ -176,6 +191,7 @@ f2 {
     .header {
         font-size: 1.75rem;
         padding: 1rem;
+        padding-top: 6rem; /* Adjusted for mobile nav height */
     }
     
     /* Adjust body text */
@@ -209,8 +225,8 @@ f2 {
     /* Footer adjustments */
     footer {
         height: auto;
-        padding: 1rem 0;
-        position: relative;
+        min-height: 4rem;
+        padding: 0.5rem 0;
     }
     
     f1, f2 {
@@ -228,6 +244,15 @@ f2 {
     ul {
         padding-left: 1.5rem;
         margin-left: 0;
+    }
+        
+    .home-logo-container {
+        padding: 1rem;
+        padding-top: 6rem;
+    }
+    
+    .home-logo {
+        max-width: 90%;
     }
 }
 
@@ -254,5 +279,8 @@ f2 {
     f1, f2 {
         font-size: 0.65em;
         padding: 0.25rem 0.5rem;
+    }
+    .home-logo {
+        max-width: 95%;
     }
 }
