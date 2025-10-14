@@ -1,4 +1,6 @@
-* {
+* 
+
+{
   box-sizing: border-box;
 }
 
@@ -9,56 +11,62 @@
   text-align: left;
 }
 
-h1 {
-  font-size: 3.2em;
-  /* line-height: 1; */
-  /* margin-top: 5%;
-  margin-right: 10%;
-  margin-left: 10%;
-  margin-bottom: 0em;
-  padding: 0px; */
-  margin: 1px 0px 0px 5px; 
-  padding: 0px 0px 0px 0px;
-  align-items: left;
-  height: 200px;
-  text-align: left;
-  color: black;
+.header {
+    font-size: 2.25rem;
+    font-weight: bold;
+    padding: 2rem;
+    padding-bottom: 1.5rem;
+    text-align: left;
+    /* position: sticky; */
+    top: 0;
+    background-color: white;
+    z-index: 10;
 }
 
-p{
-  font-size: 1.6em;
-  /* line-height: 1.1; */
-  /* align-items: center; */
-  /* height: auto; */
-  /* margin-top: 0em;
-  margin-right: 10%;
-  margin-left: 10%;
-  margin-bottom: 10%;
-  padding: 0px; */
-  margin: 0px 5px 5px 5px; 
-  padding: 0px 1px 1px 1px;
-  text-align: left;
-  text-wrap: wrap;
-  color: black;
-  overflow-y: scroll;
+.content-container {
+    display: flex;
+    gap: 2rem;
+    padding: 0 2rem;
+    align-items: flex-start;
+}
+
+.body {
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 1.625;
+    flex: 1;
+    padding-left: 2rem;
+}
+
+.about-image {
+    width: 50%;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+.instagram-link {
+    color: #E4405F;
+    transition: color 0.3s ease;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.25rem;
+}
+
+.instagram-link:hover {
+    color: #C13584;
 }
 
 div{
   height: 100vh;
   width: 100vw;
-  /* display: center; */
-  /* align-items: center;
-  height: auto;
-  text-align: center; */
 }
 
 ul{
   list-style-type: square;
-}
-
-img{
-  margin: auto;
-  display: block;
 }
 
 .nav{
@@ -80,6 +88,8 @@ img{
   font-size: 4rem;
   text-decoration: none;
   font-family: 'Snell Roundhand', cursive;
+  padding-top: 2rem;
+  margin-left: 5%;
 }
 
 .nav ul{
@@ -93,6 +103,15 @@ img{
   top: 0;
   left: 0;
   right: 0;
+}
+
+.email-link {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.email-link:hover {
+    color: #9e00a3;
 }
 
 a {
@@ -109,7 +128,7 @@ footer{
   left: 0;
   right: 0;
   width: 100%;
-  height: 1.8rem;
+  height: 2.8rem;
     
     
 }
@@ -123,6 +142,8 @@ f1{
   color: white;
   position: absolute;
   left: 0;
+  padding-left: 2rem;
+  padding-top: .5rem;
 }
 
 f2{
@@ -134,4 +155,6 @@ f2{
   color: white;
   position: absolute;
   right: 0;
+  padding-right: 2rem;
+  padding-top: .5rem;
 } 

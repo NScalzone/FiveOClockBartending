@@ -18,11 +18,11 @@
 
 a {
   font-weight: 500;
-  color: #f4e8f1;
+  color: white;
   text-decoration: inherit;
 }
 a:hover {
-  color: #f25353;
+  color: #616063;
 }
 
 body {
@@ -70,10 +70,3 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
-/*
-background-image: url('./five_o_clock_logo.png');
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-*/
