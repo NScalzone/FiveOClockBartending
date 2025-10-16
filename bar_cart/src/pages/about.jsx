@@ -8,6 +8,7 @@ const About = () => {
             <div className="content-container">
                 <p className="body">
                     Five O'Clock Mobile Bartending is a mobile bartending service based in Portland, Oregon. 
+                    We have a beautiful custom wood bar that we bring to your event, along with two professional bartenders.
                     We specialize in providing professional bartending services for private events, including weddings, corporate events, and parties of all kinds!
                     <br />
                     <br />
@@ -21,7 +22,7 @@ const About = () => {
                     <li>We can accept tips, but we do not expect them</li>
                 </ul>
                 <br />
-                <br />
+                
                 Check out our Services and pricing pages for addtional details!
                 </p>
                 

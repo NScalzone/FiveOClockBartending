@@ -8,10 +8,11 @@ const Services = () => {
                 Five O'Clock Mobile Bartending offers the following services at all events for which we are hired:
                 <ul>
                     <li>Mobile Bartending with 2 licenced bartenders</li>
-                    <li>Water, and fresh garnishes</li>
+                    <li>Beautiful custom wood bar</li>
+                    <li>Water, Ice, and fresh garnishes</li>
                     <li>Bar Tools and Equipment</li>
                     <li>Basic Plastic Drinkware (premium options available for additional charge)</li>
-                    <li>Setup and Cleanup</li>
+                    <li>Setup, Teardown, and Cleanup</li>
                     <li>Liquor Liability Insurance</li>
                     <li>Planning Meetings via Zoom</li>
                 </ul>
