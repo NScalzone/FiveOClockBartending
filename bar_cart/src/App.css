@@ -7,6 +7,8 @@
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+  padding-top: 8rem; /* Space for fixed header */
+  padding-bottom: 4rem; /* Space for fixed footer */
 }
 
 .header {
@@ -60,8 +62,8 @@
 }
 
 div {
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
+  min-height: auto;
 }
 
 ul {
@@ -180,6 +182,11 @@ f2 {
         flex-direction: column;
         padding: 0 1rem;
         gap: 1rem;
+    }
+
+    .container {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     }
     
     /* Make image full width on mobile */
