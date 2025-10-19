@@ -117,6 +117,7 @@ ul {
     color: #9e00a3;
 }
 
+
 .home-logo-container {
     display: flex;
     justify-content: center;
@@ -252,7 +253,7 @@ f2 {
         padding-left: 1.5rem;
         margin-left: 0;
     }
-        
+    
     .home-logo-container {
         padding: 1rem;
         padding-top: 6rem;
