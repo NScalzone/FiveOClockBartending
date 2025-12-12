@@ -232,27 +232,10 @@ footer {
     }
     
     /* Footer adjustments */
-    /* footer {
-        height: auto;
-        min-height: 4rem;
-        padding: 0.5rem 0;
-    }
-    
-    f1, f2 {
-        position: relative;
-        display: block;
-        padding: 0.5rem 1rem;
-        font-size: 0.7em;
-        height: auto;
-        text-align: center;
-        left: auto;
-        right: auto;
-    } */
-
     footer {
         height: auto;
-        min-height: 0rem;
-        padding: 0.5rem;
+        min-height: 4rem; /* Changed from 0rem */
+        padding: 1rem 0.5rem; /* More padding for stacked content */
         flex-direction: column;
         gap: 0.5rem;
     }
@@ -260,7 +243,6 @@ footer {
     .footer-left, .footer-right {
         font-size: 0.7em;
     }
-}
     
     /* Make lists more readable */
     ul {
@@ -270,14 +252,12 @@ footer {
     
     .home-logo-container {
         padding: 1rem;
-        /* padding-top: 6rem; */
     }
     
     .home-logo {
         max-width: 90%;
     }
-
-
+}
 /* Extra small mobile devices */
 @media (max-width: 480px) {
     .site-title {
@@ -298,10 +278,6 @@ footer {
         gap: 0.5rem;
     }
     
-    f1, f2 {
-        font-size: 0.65em;
-        padding: 0.25rem 0.5rem;
-    }
     .home-logo {
         max-width: 95%;
     }
