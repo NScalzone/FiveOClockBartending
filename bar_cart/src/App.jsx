@@ -13,10 +13,10 @@ import './App.css'
 function App(){
   return ( 
   <>
-      
-      <div className='container'>
+    <div className='container'>
       <Header />
       
+      <main style={{ flex: '1' }}> {/* This grows to fill space */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -24,10 +24,10 @@ function App(){
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        
-        <Footer />
-      </div>
-     
+      </main>
+      
+      <Footer />
+    </div>
   </>
   )
 }

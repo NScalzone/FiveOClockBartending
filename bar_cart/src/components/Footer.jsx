@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
       <footer>
-        <f1> Five O'Clock Mobile Bartending | Portland, Oregon</f1>
-        <f2>
+        <div className="footer-left"> 
+          Five O'Clock Mobile Bartending | Portland, Oregon
+        </div>
+        <div className="footer-right">
           <a 
             href="https://www.instagram.com/fiveoclockmobilebartending/" 
             target="_blank" 
@@ -24,7 +26,7 @@ const Footer = () => {
           </a>
           {' | '}
           fiveoclockbartending@gmail.com | 360-836-2011
-        </f2>
+        </div>
       </footer>
     );
 };

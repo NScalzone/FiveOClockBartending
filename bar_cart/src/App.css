@@ -1,14 +1,26 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scroll too */
+  height: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
 
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
-  margin: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-  padding-top: 8rem; /* Space for fixed header */
-  padding-bottom: 4rem; /* Space for fixed footer */
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Add this */
 }
 
 .header {
@@ -16,9 +28,9 @@
     font-weight: bold;
     padding: 2rem;
     padding-bottom: 1.5rem;
-    padding-top: 8rem; /* Add space for fixed nav */
+    /* padding-top: 8rem; /* Add space for fixed nav */
     text-align: center;
-    top: 0;
+    /* top: 0; */
     background-color: white;
     z-index: 10;
 }
@@ -36,6 +48,7 @@
     line-height: 1.625;
     flex: 1;
     padding-left: 2rem;
+    overflow-y: auto;
 }
 
 .about-image {
@@ -63,7 +76,7 @@
 
 div {
   width: 100%;
-  min-height: auto;
+  /* min-height: auto; */
 }
 
 ul {
@@ -80,10 +93,10 @@ ul {
   align-items: center;
   gap: 2rem;
   padding: 0 0rem;
-  position: fixed;
+  /* position: fixed;
   top: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   z-index: 100;
 }
 
@@ -103,7 +116,7 @@ ul {
   list-style: none;
   gap: 0.5rem;
   position: relative;
-  top: 0;
+  /* top: 0; */
   left: 0;
   right: 0;
 }
@@ -123,7 +136,7 @@ ul {
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    padding-top: 8rem;
+    /* padding-top: 8rem; */
 }
 
 .home-logo {
@@ -141,39 +154,27 @@ footer {
   background-color: black;
   border-top: 2px solid grey;
   color: white;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
   width: 100%;
   height: 2.8rem;
   z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
 }
 
-f1 {
+.footer-left {
   font-size: .8em;
   line-height: 1.1;
-  align-items: center;
-  height: 200px;
   text-align: center;
   color: white;
-  position: absolute;
-  left: 0;
-  padding-left: 2rem;
-  padding-top: .5rem;
 }
 
-f2 {
+.footer-right {
   font-size: .8em;
   line-height: 1.1;
-  align-items: center;
-  height: 200px;
   text-align: center;
   color: white;
-  position: absolute;
-  right: 0;
-  padding-right: 2rem;
-  padding-top: .5rem;
 }
 
 /* Mobile responsive styles */
@@ -186,8 +187,8 @@ f2 {
     }
 
     .container {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    /* padding-top: 6rem;
+    padding-bottom: 6rem; */
     }
     
     /* Make image full width on mobile */
@@ -199,7 +200,7 @@ f2 {
     .header {
         font-size: 1.75rem;
         padding: 1rem;
-        padding-top: 6rem; /* Adjusted for mobile nav height */
+        /* padding-top: 6rem;  */
     }
     
     /* Adjust body text */
@@ -231,7 +232,7 @@ f2 {
     }
     
     /* Footer adjustments */
-    footer {
+    /* footer {
         height: auto;
         min-height: 4rem;
         padding: 0.5rem 0;
@@ -246,7 +247,20 @@ f2 {
         text-align: center;
         left: auto;
         right: auto;
+    } */
+
+    footer {
+        height: auto;
+        min-height: 0rem;
+        padding: 0.5rem;
+        flex-direction: column;
+        gap: 0.5rem;
     }
+    
+    .footer-left, .footer-right {
+        font-size: 0.7em;
+    }
+}
     
     /* Make lists more readable */
     ul {
@@ -256,7 +270,7 @@ f2 {
     
     .home-logo-container {
         padding: 1rem;
-        padding-top: 6rem;
+        /* padding-top: 6rem; */
     }
     
     .home-logo {

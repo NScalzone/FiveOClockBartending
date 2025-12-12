@@ -1,4 +1,94 @@
 import React, {useState, useEffect} from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+
+function ContactForm() {
+  const [state, handleSubmit] = useForm("xblnkwjq");
+  if (state.succeeded) {
+      return <p>Thanks for reaching out, we'll be in touch soon!</p>;
+  }
+  return (
+    <form onSubmit={handleSubmit}>
+      <label htmlFor="email">
+        Email Address
+      </label>
+      <br />
+      <input
+        id="email"
+        type="email" 
+        name="email"
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+      <br />
+      <label htmlFor="phone number">
+        Phone Number
+      </label>
+      <br />
+      <input
+        type="tel"
+        id="phone number"
+        name="phone number"  placeholder="555-123-4567"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  // Enforces format like 555-123-4567
+      />
+      <ValidationError 
+        prefix="Phone Number" 
+        field="phone number"
+        errors={state.errors}
+      />
+      <br />
+      <label htmlFor="Number of guests">
+        Number of guests
+      </label>
+      <br />
+      <textarea
+        id="number of guests"
+        name="number of guests"
+      />
+      <ValidationError 
+        prefix="Number of guests" 
+        field="number of guests"
+        errors={state.errors}
+      />
+      <br />
+      <label htmlFor="date of event">
+        Date of Event
+      </label>
+      <br />
+      <input
+        type="date"
+        id="date of event"
+        name="date of event"
+      />
+      <ValidationError 
+        prefix="Date of Event" 
+        field="date of event"
+        errors={state.errors}
+      />
+      <br />
+      <label htmlFor="message">
+        Message
+      </label>
+      <br />
+      <textarea
+        id="message"
+        name="message"
+        rows="6"
+      />
+      <ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
+      <br />
+      <button type="submit" disabled={state.submitting}>
+        Submit
+      </button>
+    </form>
+  );
+}
 
 const Contact = () => {
     return (
@@ -26,8 +116,9 @@ const Contact = () => {
                     </a>
                     <br />
                     <br />
-                    Email us at <a href="mailto:fiveoclockbartending@gmail.com" className="email-link">fiveoclockbartending@gmail.com</a> or call at (360)-836-2011 for quotes and availability.
+                    Email us at <a href="mailto:fiveoclockbartending@gmail.com" className="email-link">fiveoclockbartending@gmail.com</a> or call at (360)-836-2011 for quotes and availability. Or, fill out the contact form.
                 </p>
+                <ContactForm />
                 <img src="guy_taking_drink.jpg" alt="Contact Us" className="about-image" />
             </div>
         </div>
