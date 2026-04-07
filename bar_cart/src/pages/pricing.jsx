@@ -5,6 +5,7 @@ const Pricing = () => {
         <div>
             <h1 className="header">Pricing</h1>
             <div className="content-container">
+                <div className="text-box">
                 <p className="body">
                     We offer competitive pricing for our mobile bartending services, and we are happy to work with 
                     you to create a custom package that fits your needs and budget. However, we do like to give a general idea
@@ -36,6 +37,7 @@ const Pricing = () => {
                     Signature cocktails entail an additional charge because they require us to supply additional ingredients and to spend additional time on preparation.
                     We find that more than 2 signature cocktails can slow down service significantly, but we are happy to discuss options if you wish to have more.
                 </p>
+                </div>
                 <img src="cocktails_on_bar.jpg" alt="Pricing" className="about-image" />
             </div>
         </div>

@@ -4,7 +4,7 @@ const Home = () => {
     return (
         <div>
             <div className="home-logo-container">
-                <img src="/five_o_clock_logo.png" alt="five o'clock logo" className="home-logo"/> 
+                <img src="/five_o_clock_logo_black.png" alt="five o'clock logo" className="home-logo"/> 
             </div>
         </div>
     );

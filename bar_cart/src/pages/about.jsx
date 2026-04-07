@@ -6,6 +6,7 @@ const About = () => {
             <h1 className="header">About Us</h1>
             
             <div className="content-container">
+                <div className="text-box">
                 <p className="body">
                     Five O'Clock Mobile Bartending is a mobile bartending service based in Portland, Oregon. 
                     We have a beautiful custom wood bar that we bring to your event, along with two professional bartenders.
@@ -25,7 +26,7 @@ const About = () => {
                 
                 Check out our Services and pricing pages for addtional details!
                 </p>
-                
+                </div>
                 <img 
                     src="/joanna_serving_drink.jpg" 
                     alt="Joanna at bar" 
